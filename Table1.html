@@ -1,0 +1,98 @@
+
+<html>
+<title>Tabela</title>
+<meta charset = "utf-8">
+<table id="playlistTable">
+  <div>
+    <caption class="nomeF">Funcionários</caption>
+  </div>
+  <div>
+  <thead>
+  <link rel="stylesheet" type="text/css" href="css.css">
+    <tr>
+      <th>Educação</th>
+      <th>Emocional</th>
+      <th>Criatividade</th>
+	  <th>Ética Pessoal</th>
+	  <th>Frequência</th>
+	  <th>Pontualidade</th>
+	  <th>Cumprimento de Prazos</th>
+    <th>Liderança</th>
+    <th>Comunicação</th>
+    <th>Flexibilidade</th>
+    <th>Iniciativa</th>
+    <th>Comprometimento</th>
+    <th>Foco</th>
+
+		   
+    </tr>
+    
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><center>Votado</center></td>
+      <td><center>Votado</center></td>
+      <td><center>Votado</center></td>
+      <td><center>Votado</center></td>
+	  <td><center>Voto não realizado</center></td>
+	  <td><center>Voto não realizado</center></td>
+	  <td><center>Voto não realizado</center></td>
+	  <td><center>Voto não realizado</center></td>
+    <td><center>Voto não realizado</center></td>
+    <td><center>Voto não realizado</center></td>
+    <td><center>Votado</center></td>
+    <td><center>Votado</center></td>
+    <td><center>Votado</center></td>
+    </tr>
+    
+    <tr>
+      <td><center>9</center></td>
+      <td><center>7</center></td>
+      <td><center>8</center></td>
+      <td><center>6</center></td>
+	  <td><center>-</center></td>
+	  <td><center>-</center></td>
+	  <td><center>-</center></td>
+	  <td><center>-</center></td>
+    <td><center>-</center></td>
+    <td><center>-</center></td>
+    <td><center>7</center></td>
+    <td><center>10</center></td>
+    <td><center>8</center></td>
+    </tr>
+
+    <tr>
+      <td height = "50" class="submit"><center><a href="Voto.html">Editar</a></center></td>
+	   <td class="submit"><center><a href="Voto.html">Editar</a></center></td> 
+	   <td class="submit"><center><a href="Voto.html">Editar</a><center></td>
+	   <td class="submit"><center><a href="Voto.html">Editar</a><center></td>
+	   <td class="submit"><center><a href="Voto.html">Editar</a><center></td>
+	   <td class="submit"><center><a href="Voto.html">Editar</a><center></td>
+	   <td class="submit"><center><a href="Voto.html">Editar</a><center></td>
+	   <td class="submit"><center><a href="Voto.html">Editar</a><center></td>
+	   <td class="submit"><center><a href="Voto.html">Editar</a><center></td>
+	   <td class="submit"><center><a href="Voto.html">Editar</a><center></td>
+	   <td class="submit"><center><a href="Voto.html">Editar</a><center></td>
+	   <td class="submit"><center><a href="Voto.html">Editar</a><center></td>
+	   <td class="submit"><center><a href="Voto.html">Editar</a><center></td>
+	   
+	   
+	   
+      
+    </tr>
+  </p>
+  </tbody>
+  </div>
+</table>
+</meta>
+	<br><br>
+	<center><a class="submit" href="Relatorio.pdf">Gerar Relatório</a><center></td>	
+</html>
+<script>
+var table = document.getElementById("playlistTable");
+window.onload = setcap;
+function setcap(){
+  table.caption.innerHTML = localStorage.getItem("nome");
+}
+</script>

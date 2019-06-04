@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="select.css" />
+	<title>Selecao</title>
+  </head>
+	<body>
+      <div class="container">
+	    <div class="box">
+		  <div>
+		    <h1>Selecione:</h1>
+		  </div>
+		  <div class="content">
+				<h2 class="selecao">Habilidade:</h2> 
+				<p>
+					<select id="cbPais" onchange="mod()">
+						<option>Habilidade a avaliar</option>
+						<option value="1">Educação</option>
+						<option value="2">Emocional</option>
+						<option value="3">Criatividade</option>
+						<option value="4">Ética Pessoal</option>
+						<option value="5">Frequencia</option>
+						<option value="6">Pontualidade</option>
+						<option value="7">Cumprimento de Prazos</option>
+						<option value="8">Ética Profissional</option>
+						<option value="9">Liderança</option>
+						<option value="10">Comunicação</option>
+						<option value="11">flexibilidade</option>
+						<option value="12">iniciativa</option>
+						<option value="13">Comprometimento</option>
+						<option value="14">Foco</option>
+					</select>		
+				</p>
+				<h2 class="selecao">Nome do funcionário:</h2>
+				<p>	
+					<select id="cbPais1">
+						<option>Funcionário a avaliar</option>
+						<option>João</option>
+						<option>Miguel</option>
+						<option>alex</option>
+						<option>José</option>
+					</select>
+				</p>
+				<p id="Descricao"></p>
+		  </div>
+		  <div>
+				<center>
+					<form method="get" action="Voto.html" onsubmit="passNam()">
+						<button type="submit" class="submit">Avaliar</button>
+					</form>
+				</center> 
+		  </div>
+				
+		</div>
+	  </div>
+	</body>
+	<script>
+		var desc = document.getElementById("Descricao");
+		var drop1 = document.getElementById("cbPais1");
+		var drop = document.getElementById("cbPais");
+		function mod(){	
+			if(drop.value == "1") desc.innerHTML = "Educação é a caracterísitca que avalia a forma como o funcionário trata seus companheiros de trabalho";
+			if(drop.value == "2") desc.innerHTML = "Emocional é a característica que avalia a forma como o funcionário lida com suas emoções e se seus problemas pessoais afetam muito seu desempenho no trabalho";
+			if(drop.value == "3") desc.innerHTML = "Critividade é a característica que avalia a habilidade de propor soluções, melhorias e inovações";
+			if(drop.value == "4") desc.innerHTML = "ética pessoal corresponde aos valores, à forma de pensar e agir de uma pessoa em relação ao trabalho, à vida, ao mundo e as pessoas à sua volta também. ";
+			if(drop.value == "5") desc.innerHTML = "Frequência é a característica que analisa a presença do funcionário na empresa, ou seja, se ele é presente ou falta demais ao trabalho";
+			if(drop.value == "6") desc.innerHTML = "Pontualidade é a característica que analisa se o funcionário tem chegado no horário ou se atrasa demais ";
+			if(drop.value == "7") desc.innerHTML = "Cumprimento de Prazos é a característica que analisa se o funcionário entrega seus deveres dentro do período estabelecido a ele";
+			if(drop.value == "8") desc.innerHTML = "A ética profissional é o conjunto de valores, normas e condutas que conduzem e conscientizam as atitudes e o comportamento de um profissional na organização. ";
+			if(drop.value == "9") desc.innerHTML = "Liderança é a caracterísitca que avalia as habilidades de motivação e influência do funcionário sob seu time";
+			if(drop.value == "10") desc.innerHTML = "Comunicação é a característica que avalia se o funcionário consegue dialogar com sua equipe de forma que todos o entendam";
+			if(drop.value == "11") desc.innerHTML = "Flexibilidade é a característica que avalia se o funcionário trabalha bem em situações adversas como : Fora da sua área de atuação; Fora do seu horário de atuação; Diante de opiniões contrárias ";
+			if(drop.value == "12") desc.innerHTML = "Iniciativa é a característica que avalia se o funcionário é pró-ativo";
+			if(drop.value == "13") desc.innerHTML = "Comprometimento é a característica que avalia se o funcionário se dedica em seu trabalho";
+			if(drop.value == "14") desc.innerHTML = "Foco é a característica que avalia se o funcionário é atencioso em seu horário de trabalho e não se distrai com coisas alheias como: Redes socias; Celular; Jogos";
+		}
+		function passNam(){
+			localStorage.setItem("nome", drop1.options[drop1.selectedIndex].text);
+			localStorage.setItem("hab", drop.options[drop.selectedIndex].text);
+		}
+	</script>
+</html>

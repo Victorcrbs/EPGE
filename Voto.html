@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>Voto</title>
+ <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+
+<body>
+
+
+
+<form name="formteste" action="table1.html" method="get" >
+
+<h1 class="voto">VOTO</h1>
+
+<p class="nome" id="na">
+        Nome:
+ </p>
+        <p class="EDUCAÇÃO" id="habi">
+        EDUCAÇÃO:
+</p>
+<p style="position: absolute; z-index: -1; letter-spacing: 6px; left: 15px" id="num">
+          1   2   3   4   5   6   7   8   9   10
+</p>
+
+        <label>
+                <input type="radio" name="optradio" checked>
+        </label>
+        </label>
+                <input type="radio" name="optradio">
+        </label>
+        </label>
+                <input type="radio" name="optradio">
+        </label>
+</label>
+<input type="radio" name="optradio">
+</label>
+</label>
+<input type="radio" name="optradio">
+</label>
+</label>
+<input type="radio" name="optradio">
+</label>
+</label>
+<input type="radio" name="optradio">
+</label>
+</label>
+<input type="radio" name="optradio">
+</label>
+</label>
+<input type="radio" name="optradio">
+</label>
+</label>
+<input type="radio" name="optradio">
+</label>       
+        <p>
+              
+                <input type="text" style="width:900px ; height: 100px" placeholder="Comentário" required="required"></textarea>
+        </p>
+
+
+<p class="enviar">
+ <input type="submit" name="enviar" value="Enviar">
+ </p>
+
+</form>
+
+</body>
+
+<script>
+ window.onload = setname;
+ function setname(){
+        var nome = document.getElementById("na");
+        nome.innerHTML = nome.innerHTML + " " + localStorage.getItem("nome");
+        var habi = document.getElementById("habi");
+        habi.innerHTML = "Característica sendo votada"+": "+localStorage.getItem("hab") + "";
+ }
+</script>
+ </html>
