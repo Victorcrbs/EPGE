@@ -5,175 +5,49 @@ Survey
 var json = {
     "pages": [
         {
-            "questions": 
-            [ {
+            "name": "page1",
+            "elements": [
+                {
                     "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
+                    "name": "nps_score",
+                    "title": "On a scale of zero to ten, how likely are you to recommend our product to a friend or colleague?",
+                    "isRequired": true,
+                    "rateMin": 0,
+                    "rateMax": 10,
+                    "minRateDescription": "(Most unlikely)",
+                    "maxRateDescription": "(Most likely)"
+                }, {
+                    "type": "checkbox",
+                    "name": "promoter_features",
+                    "visibleIf": "{nps_score} >= 9",
+                    "title": "What features do you value the most?",
+                    "isRequired": true,
+                    "validators": [
+                        {
+                            "type": "answercount",
+                            "text": "Please select two features maximum.",
+                            "maxCount": 2
+                        }
+                    ],
+                    "hasOther": true,
+                    "choices": [
+                        "Performance", "Stability", "User Interface", "Complete Functionality"
+                    ],
+                    "otherText": "Other feature:",
+                    "colCount": 2
+                }, {
                     "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
+                    "name": "passive_experience",
+                    "visibleIf": "{nps_score} > 6  and {nps_score} < 9",
+                    "title": "What is the primary reason for your score?"
+                }, {
+                    "type": "comment",
+                    "name": "disappointed_experience",
+                    "visibleIf": "{nps_score} notempty",
+                    "title": "What do you miss and what was disappointing in your experience with us?"
                 }
             ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "comment",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },                                                                                               
+        }
     ],
     "showQuestionNumbers": "off"
 };
