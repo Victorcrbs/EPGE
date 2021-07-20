@@ -3,27 +3,180 @@ Survey
     .applyTheme("modern");
 
 var json = {
-    questionTitleLocation: "bottom",
-    showQuestionNumbers: "off",
-    pages: [
+    "pages": [
         {
-            name: "Address",
-            title: "Address",
-            questions: [
-                {
-                    type: "rating",
-                    name: "address1",
-                    title: "Street Address"
-                }, {
-                    type: "comment",
-                    name: "address2",
-                    title: "Address Line 2"
-                },
+            "questions": 
+            [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
             ]
-        }
-    ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "questions": [ {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie esta pessoa no quesito de eficiência",
+                    "maxRate": "10" 
+                },{
+                    "type": "comment",
+                    "name": "eficienciacomentario",
+                    "title": ""
+                }
+            ]
+        },                                                                                               
+    ],
+    "showQuestionNumbers": "off"
 };
-
 
 window.survey = new Survey.Model(json);
 
