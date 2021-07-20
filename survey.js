@@ -211,7 +211,7 @@ var json = {
                 },
                 {
                     "type": "comment",
-                    "name": "vlempresa",
+                    "name": "vlempresacomment",
                     "title": "Algum comentário adicional?",
                     "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
                 },
