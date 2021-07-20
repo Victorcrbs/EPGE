@@ -11,14 +11,14 @@ var json = {
                     "type": "text",
                     "name": "nome",
                     "title": "Nome",
-                    placeholder: "Digite seu nome",
+                    "placeHolder": "Digite seu nome",
                     "isRequired": true
                 },
                 {
                     "type": "text",
                     "name": "email",
                     "title": "E-mail",
-                    "placeholder": "Digite seu e-mail",
+                    "placeHolder": "Digite seu e-mail",
                     "isRequired": true
                 },
                 {
