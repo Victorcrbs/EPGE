@@ -6,7 +6,7 @@ var json = {
     "pages": [
         {
             "name": "page1",
-            "elements": [
+            "elements": [ 
                 {
                     "type": "text",
                     "name": "nome",
