@@ -6,27 +6,51 @@ var json = {
     "pages": [
         {
             "name": "page1",
-            "elements": [
-                {
-                    "type": "panel",
-                    "innerIndent": 1,
-                    "name": "panel1",
-                    "title": "Please, help us improve our product",
-                    "elements": [
-                {
-                    "type": "rating",
-                    "name": "satisfaction",
-                    "title": "How satisfied are you with the Product?",
-                    "mininumRateDescription": "Not Satisfied",
-                    "maximumRateDescription": "Completely satisfied"
-                },
-                {
-                    "type": "comment",
-                    "name": "suggestions",
-                    "title": "What would make you more satisfied with the Product?"
-                },
-                    ]
-                } 
+            "elements": {
+                "type": "panel",
+                "innerIndent": 1,
+                "name": "panel1",
+                "title": "Please, help us improve our product",
+                "visibleIf": "{satisfaction} < 3",
+                "elements": [
+                    {
+                        "type": "checkbox",
+                        "choices": [
+                            {
+                                "value": "1",
+                                "text": "Customer relationship"
+                            }, {
+                                "value": "2",
+                                "text": "Service quality"
+                            }, {
+                                "value": "3",
+                                "text": "Support response time"
+                            }
+                        ],
+                        "name": "What should be improved?"
+                    }, {
+                        "type": "comment",
+                        "name": "suggestions",
+                        "title": "What would make you more satisfied with the Product?"
+                    }, {
+                        "type": "panel",
+                        "innerIndent": 1,
+                        "name": "panel2",
+                        "title": "Send us your contact information (optionally)",
+                        "state": "collapsed",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "name": "name",
+                                "title": "Name:"
+                            }, {
+                                "type": "text",
+                                "inputType": "email",
+                                "name": "email",
+                                "title": "E-mail"
+                            }
+                        ]
+                    } 
             ]
         }
     ]
