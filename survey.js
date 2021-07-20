@@ -5,174 +5,22 @@ Survey
 var json = {
     "pages": [
         {
-            "questions": [ {
+            "name": "page1",
+            "elements": [
+                {
                     "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
+                    "name": "satisfaction",
+                    "title": "How satisfied are you with the Product?",
+                    "mininumRateDescription": "Not Satisfied",
+                    "maximumRateDescription": "Completely satisfied"
+                },
+                {
+                    "type": "comment",
+                    "name": "suggestions",
+                    "title": "What would make you more satisfied with the Product?"
+                }, 
             ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },
-        {
-            "questions": [ {
-                    "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie esta pessoa no quesito de eficiência",
-                    "maxRate": "10" 
-                },{
-                    "type": "text",
-                    "name": "eficienciacomentario",
-                    "title": ""
-                }
-            ]
-        },                                                                                               
+        }
     ]
 };
 
