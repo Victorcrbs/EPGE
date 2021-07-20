@@ -22,6 +22,13 @@ var json = {
                     "isRequired": true
                 },
                 {
+                    "type": "text",
+                    "name": "nomecolab",
+                    "title": "Nome do colaborador a ser avaliado",
+                    "placeHolder": "Digite o nome do colaborador a ser avaliado",
+                    "isRequired": true
+                },
+                {
                     "type": "rating",
                     "name": "eficiencia",
                     "title": "Avalie a eficiência deste colaborador:",
@@ -33,7 +40,7 @@ var json = {
                     "type": "comment",
                     "name": "eficienciacomment",
                     "title": "Algum comentário adicional?",
-                    "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
+                    "placeHolder":"Este atributo está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
                 },
                 {
                     "type": "rating",
@@ -46,7 +53,8 @@ var json = {
                 {
                     "type": "comment",
                     "name": "eficaciacomment",
-                    "title": "Algum comentário adicional?"
+                    "title": "Algum comentário adicional?",
+                    "placeHolder":"Este atributo está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
                 },
                 {
                     "type": "rating",
@@ -59,7 +67,8 @@ var json = {
                 {
                     "type": "comment",
                     "name": "posturacomment",
-                    "title": "Algum comentário adicional?"
+                    "title": "Algum comentário adicional?",
+                    "placeHolder":"Este atributo avalia a postura do liderado em relação a disponibilidade, assiduidade e forma de expressão no ambiente de trabalho."
                 },
             ]
         },
@@ -78,7 +87,7 @@ var json = {
                     "type": "comment",
                     "name": "resilienciacomment",
                     "title": "Algum comentário adicional?",
-                    "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
+                    "placeHolder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
                 },
                 {
                     "type": "rating",
@@ -123,7 +132,7 @@ var json = {
                     "type": "comment",
                     "name": "rpcomment",
                     "title": "Algum comentário adicional?",
-                    "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
+                    "placeHolder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
                 },
                 {
                     "type": "rating",
@@ -168,7 +177,7 @@ var json = {
                     "type": "comment",
                     "name": "relintercomment",
                     "title": "Algum comentário adicional?",
-                    "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
+                    "placeHolder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
                 },
                 {
                     "type": "rating",
@@ -213,7 +222,7 @@ var json = {
                     "type": "comment",
                     "name": "vlempresacomment",
                     "title": "Algum comentário adicional?",
-                    "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
+                    "placeHolder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
                 },
             ]
         }
