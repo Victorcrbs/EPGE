@@ -1,17 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Convert survey results to PDF, Knockoutjs Survey Library Example</title><meta name="viewport" content="width=device-width"/>
-        <script src="https://unpkg.com/knockout@3.5.1/build/output/knockout-latest.js"></script>
-        <script src="https://unpkg.com/survey-knockout@1.8.56/survey.ko.min.js"></script>
-        <link rel="stylesheet" href="./index.css"><link href="https://unpkg.com/survey-core@1.8.56/modern.css" type="text/css" rel="stylesheet"/>
-        <script src="https://unpkg.com/jspdf/dist/polyfills.umd.js"></script>
-        <script src="https://unpkg.com/jspdf@2.3.0/dist/jspdf.umd.min.js"></script>
-        <script src="https://unpkg.com/survey-pdf@1.8.56/survey.pdf.min.js"></script>
-    </head>
-    <body>
-        <div id="surveyElement" style="display:inline-block;width:100%;"></div>
-	    <button id="saveToPDFbtn" style="margin:10px">Save to PDF</button>    
-	</body>
-	<script type="text/javascript" src="./index.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body class="loginscreen">
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="GET" action="survey.html"> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="nome_login">Seu E-Mail</label>
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+          </p>
+           
+          <p> 
+            <label for="email_login">Sua Senha</label>
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+           
+          <p> 
+				<input type="submit"  value="Logar" />
+			 
+          </p>
+           
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+ 
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>
+            <p class="Welcome">Bem Vindo</p>
+            <p>Cadastro</p>
+          </h1> 
+           
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+          </p>
+           
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+          </p>
+           
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+           
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
 </html>
