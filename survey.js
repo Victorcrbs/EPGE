@@ -8,6 +8,12 @@ var json = {
             "name": "page1",
             "elements": [
                 {
+                    "type": "panel",
+                    "innerIndent": 1,
+                    "name": "panel1",
+                    "title": "Please, help us improve our product",
+                    "elements": [
+                {
                     "type": "rating",
                     "name": "satisfaction",
                     "title": "How satisfied are you with the Product?",
@@ -18,7 +24,9 @@ var json = {
                     "type": "comment",
                     "name": "suggestions",
                     "title": "What would make you more satisfied with the Product?"
-                }, 
+                },
+                    ]
+                } 
             ]
         }
     ]
