@@ -134,6 +134,7 @@ document
     .onclick = function () {
         var pdfWidth = survey.pdfWidth || 210;
         var pdfHeight = survey.pdfHeight || 297;
+        console.log(xd)
         saveSurveyToPdf("surveyResult.pdf", survey, pdfWidth, pdfHeight);
     };
 
