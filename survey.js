@@ -68,178 +68,152 @@ var json = {
             "elements": [
                 {
                     "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie a eficiência deste colaborador:",
+                    "name": "resiliencia",
+                    "title": "Avalie a resiliência deste colaborador:",
                     "isRequired": true,
                     "rateMin": 1,
                     "rateMax": 10,
                 },
                 {
                     "type": "comment",
-                    "name": "eficienciacomment",
+                    "name": "resilienciacomment",
                     "title": "Algum comentário adicional?",
                     "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
                 },
                 {
                     "type": "rating",
-                    "name": "eficacia",
-                    "title": "Avalie a eficácia deste colaborador:",
+                    "name": "desafios",
+                    "title": "Avalie como o colaborador reage a desafios:",
                     "isRequired": true,
                     "rateMin": 1,
                     "rateMax": 10,
                 },
                 {
                     "type": "comment",
-                    "name": "eficaciacomment",
+                    "name": "desafioscomment",
                     "title": "Algum comentário adicional?"
                 },
                 {
                     "type": "rating",
-                    "name": "postura",
-                    "title": "Avalie a postura deste colaborador:",
+                    "name": "etica",
+                    "title": "Avalie a ética deste colaborador:",
                     "isRequired": true,
                     "rateMin": 1,
                     "rateMax": 10,
                 },
                 {
                     "type": "comment",
-                    "name": "posturacomment",
+                    "name": "eticacomment",
                     "title": "Algum comentário adicional?"
                 },
             ]
         },
         {
-            "name": "page2",
+            "name": "page3",
             "elements": [
                 {
                     "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie a eficiência deste colaborador:",
+                    "name": "rp",
+                    "title": "Avalie como o colaborador atua em sua resolução de problemas:",
                     "isRequired": true,
                     "rateMin": 1,
                     "rateMax": 10,
                 },
                 {
                     "type": "comment",
-                    "name": "eficienciacomment",
+                    "name": "rpcomment",
                     "title": "Algum comentário adicional?",
                     "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
                 },
                 {
                     "type": "rating",
-                    "name": "eficacia",
-                    "title": "Avalie a eficácia deste colaborador:",
+                    "name": "comunicacao",
+                    "title": "Avalie como o colaborador atua em sua comunicação:",
                     "isRequired": true,
                     "rateMin": 1,
                     "rateMax": 10,
                 },
                 {
                     "type": "comment",
-                    "name": "eficaciacomment",
+                    "name": "comunicacaocomment",
                     "title": "Algum comentário adicional?"
                 },
                 {
                     "type": "rating",
-                    "name": "postura",
-                    "title": "Avalie a postura deste colaborador:",
+                    "name": "pro",
+                    "title": "Avalie a proatividade deste colaborador:",
                     "isRequired": true,
                     "rateMin": 1,
                     "rateMax": 10,
                 },
                 {
                     "type": "comment",
-                    "name": "posturacomment",
+                    "name": "procomment",
                     "title": "Algum comentário adicional?"
                 },
             ]
         },
         {
-            "name": "page2",
+            "name": "page4",
             "elements": [
                 {
                     "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie a eficiência deste colaborador:",
+                    "name": "relinter",
+                    "title": "Avalie como o colaborador atua em seus relacionamentos interpessoais:",
                     "isRequired": true,
                     "rateMin": 1,
                     "rateMax": 10,
                 },
                 {
                     "type": "comment",
-                    "name": "eficienciacomment",
+                    "name": "relintercomment",
                     "title": "Algum comentário adicional?",
                     "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
                 },
                 {
                     "type": "rating",
-                    "name": "eficacia",
-                    "title": "Avalie a eficácia deste colaborador:",
+                    "name": "col",
+                    "title": "Avalie a colaboração com a equipe deste colaborador:",
                     "isRequired": true,
                     "rateMin": 1,
                     "rateMax": 10,
                 },
                 {
                     "type": "comment",
-                    "name": "eficaciacomment",
+                    "name": "colcomment",
                     "title": "Algum comentário adicional?"
                 },
                 {
                     "type": "rating",
-                    "name": "postura",
-                    "title": "Avalie a postura deste colaborador:",
+                    "name": "releq",
+                    "title": "Avalie o relacionamento com a equipe deste colaborador:",
                     "isRequired": true,
                     "rateMin": 1,
                     "rateMax": 10,
                 },
                 {
                     "type": "comment",
-                    "name": "posturacomment",
+                    "name": "releqcomment",
                     "title": "Algum comentário adicional?"
                 },
             ]
         },
         {
-            "name": "page2",
+            "name": "page5",
             "elements": [
                 {
                     "type": "rating",
-                    "name": "eficiencia",
-                    "title": "Avalie a eficiência deste colaborador:",
+                    "name": "vlempresa",
+                    "title": "Avalie a aderência deste colaborador aos valores e diretrizes da empresa:",
                     "isRequired": true,
                     "rateMin": 1,
                     "rateMax": 10,
                 },
                 {
                     "type": "comment",
-                    "name": "eficienciacomment",
+                    "name": "vlempresa",
                     "title": "Algum comentário adicional?",
                     "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
-                },
-                {
-                    "type": "rating",
-                    "name": "eficacia",
-                    "title": "Avalie a eficácia deste colaborador:",
-                    "isRequired": true,
-                    "rateMin": 1,
-                    "rateMax": 10,
-                },
-                {
-                    "type": "comment",
-                    "name": "eficaciacomment",
-                    "title": "Algum comentário adicional?"
-                },
-                {
-                    "type": "rating",
-                    "name": "postura",
-                    "title": "Avalie a postura deste colaborador:",
-                    "isRequired": true,
-                    "rateMin": 1,
-                    "rateMax": 10,
-                },
-                {
-                    "type": "comment",
-                    "name": "posturacomment",
-                    "title": "Algum comentário adicional?"
                 },
             ]
         }
