@@ -8,34 +8,45 @@ var json = {
             "name": "page1",
             "elements": [
                 {
+                    "type": "text",
+                    "name": "nome",
+                    "title": "Nome",
+                    "placeholder": "Digite seu nome",
+                    "isRequired": true
+                },
+                {
+                    "type": "text",
+                    "name": "email",
+                    "title": "E-mail",
+                    "placeholder": "Digite seu e-mail",
+                    "isRequired": true
+                },
+                {
                     "type": "rating",
                     "name": "eficiencia",
-                    "title": "Avalie a eficiência deste colaborador: ",
+                    "title": "Avalie a eficiência deste colaborador:",
                     "isRequired": true,
                     "rateMin": 0,
                     "rateMax": 10,
-                    "minRateDescription": "(Most unlikely)",
-                    "maxRateDescription": "(Most likely)"
                 },
                 {
                     "type": "comment",
                     "name": "eficienciacomment",
-                    "title": "What do you miss and what was disappointing in your experience with us?"
+                    "title": "Algum comentário adicional?",
+                    "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
                 },
                 {
                     "type": "rating",
                     "name": "eficacia",
-                    "title": "Avalie a eficácia deste colaborador:?",
+                    "title": "Avalie a eficácia deste colaborador:",
                     "isRequired": true,
                     "rateMin": 0,
                     "rateMax": 10,
-                    "minRateDescription": "(Most unlikely)",
-                    "maxRateDescription": "(Most likely)"
                 },
                 {
                     "type": "comment",
                     "name": "eficaciacomment",
-                    "title": "What do you miss and what was disappointing in your experience with us?"
+                    "title": "Algum comentário adicional?"
                 },
                 {
                     "type": "rating",
@@ -44,13 +55,56 @@ var json = {
                     "isRequired": true,
                     "rateMin": 0,
                     "rateMax": 10,
-                    "minRateDescription": "(Most unlikely)",
-                    "maxRateDescription": "(Most likely)"
                 },
                 {
                     "type": "comment",
                     "name": "posturacomment",
-                    "title": "What do you miss and what was disappointing in your experience with us?"
+                    "title": "Algum comentário adicional?"
+                },
+            ]
+        },
+        {
+            "name": "page2",
+            "elements": [
+                {
+                    "type": "rating",
+                    "name": "eficiencia",
+                    "title": "Avalie a eficiência deste colaborador:",
+                    "isRequired": true,
+                    "rateMin": 0,
+                    "rateMax": 10,
+                },
+                {
+                    "type": "comment",
+                    "name": "eficienciacomment",
+                    "title": "Algum comentário adicional?",
+                    "placeholder":"está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade."
+                },
+                {
+                    "type": "rating",
+                    "name": "eficacia",
+                    "title": "Avalie a eficácia deste colaborador:",
+                    "isRequired": true,
+                    "rateMin": 0,
+                    "rateMax": 10,
+                },
+                {
+                    "type": "comment",
+                    "name": "eficaciacomment",
+                    "title": "Algum comentário adicional?"
+                },
+                {
+                    "type": "rating",
+                    "name": "postura",
+                    "title": "Avalie a postura deste colaborador:",
+                    "isRequired": true,
+                    "rateMin": 0,
+                    "rateMax": 10,
+                },
+                {
+                    "type": "comment",
+                    "name": "posturacomment",
+                    "title": "Algum comentário adicional?"
                 },
             ]
         }
