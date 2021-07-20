@@ -9,8 +9,8 @@ var json = {
             "elements": [
                 {
                     "type": "rating",
-                    "name": "nps_score",
-                    "title": "On a scale of zero to ten, how likely are you to recommend our product to a friend or colleague?",
+                    "name": "eficiencia",
+                    "title": "Avalie a eficiência deste colaborador: ",
                     "isRequired": true,
                     "rateMin": 0,
                     "rateMax": 10,
@@ -19,13 +19,13 @@ var json = {
                 },
                 {
                     "type": "comment",
-                    "name": "disappointed_experience",
+                    "name": "eficienciacomment",
                     "title": "What do you miss and what was disappointing in your experience with us?"
                 },
                 {
                     "type": "rating",
-                    "name": "nps_score",
-                    "title": "On a scale of zero to ten, how likely are you to recommend our product to a friend or colleague?",
+                    "name": "eficacia",
+                    "title": "Avalie a eficácia deste colaborador:?",
                     "isRequired": true,
                     "rateMin": 0,
                     "rateMax": 10,
@@ -34,13 +34,13 @@ var json = {
                 },
                 {
                     "type": "comment",
-                    "name": "disappointed_experience",
+                    "name": "eficaciacomment",
                     "title": "What do you miss and what was disappointing in your experience with us?"
                 },
                 {
                     "type": "rating",
-                    "name": "nps_score",
-                    "title": "On a scale of zero to ten, how likely are you to recommend our product to a friend or colleague?",
+                    "name": "postura",
+                    "title": "Avalie a postura deste colaborador:",
                     "isRequired": true,
                     "rateMin": 0,
                     "rateMax": 10,
@@ -49,7 +49,7 @@ var json = {
                 },
                 {
                     "type": "comment",
-                    "name": "disappointed_experience",
+                    "name": "posturacomment",
                     "title": "What do you miss and what was disappointing in your experience with us?"
                 },
             ]
