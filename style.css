@@ -10,7 +10,7 @@ body{
 }
 
 .loginscreen{
-    background-color: rgb(26, 179, 148); 
+    background-color: #066a75; 
 }
  
 /* remove a linha dos links */
@@ -32,7 +32,7 @@ a.links{
 
   h1{
     font-size: 48px;
-    color: rgb(26, 179, 148);
+    color: #066a75;
     padding: 2px 0 10px 0;
     font-family: Arial,sans-serif;
     font-weight: bold;
